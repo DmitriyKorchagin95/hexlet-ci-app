@@ -9,6 +9,7 @@ jobs:
       - uses: actions/setup-node@v4
       - run: make setup
       - run: make lint
+      - uses: hexlet-components/hello-from-hexlet-action@release
 
   test:
     needs: setup
